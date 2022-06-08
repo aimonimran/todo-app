@@ -1,13 +1,95 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #f0efef;
+  color: #563f46;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 4rem;
+  width: 25%;
+}
+
+.todo {
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.input-items {
+  padding: 1rem;
+  border-radius: 2rem;
+  border-color: #b0aac0;
+  color:black;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.add-icon {
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  position: absolute;
+  right: 6%;
+  top: 4.75rem;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.add-icon:hover {
+  color: #77a8a8;
+}
+
+.show-item { 
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #b0aac0;
+  margin: 1rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 1.5rem;
+  transition: all 400ms ease;
+  cursor: pointer;
+  background: #b0aac0;
+  border: 1px solid #b0aac0;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.show-item:hover{
+  background: #563f46;
+}
+
+.delete-icon {
+  font-size: 1.5rem;
+  transition: all 100ms ease;
+}
+
+.btn-remove {
+  display: flex;
+  margin: 0 auto;
+  border: transparent;
+  background: #b0aac0;
+  padding: 0.6rem;
+  border-radius: 2rem;
+  color: #fff;
+  transition: all 600ms ease;
+  cursor: pointer;
+  margin-top: 0.2rem;
+  width: 35%;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.btn-remove:hover {
+  background: #50394c;
 }
