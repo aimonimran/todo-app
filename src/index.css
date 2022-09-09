@@ -93,3 +93,21 @@ body {
 .btn-remove:hover {
   background: #50394c;
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+} 
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .btn-remove {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .btn-remove {
+    width: 50%;
+  }
+}
